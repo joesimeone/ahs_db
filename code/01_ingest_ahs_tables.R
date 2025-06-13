@@ -161,6 +161,8 @@ pmap(national_list, function(tbl_name, year, orig_path) {
 
 tictoc::toc()
 
+
+dbDisconnect(con)
 ## How you'd see columns within a schema that I made
 # dbGetQuery(con, "SELECT column_name, data_type
 #                  FROM information_schema.columns
